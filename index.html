@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- General Styles - MY OWN CSS UTILITY CLASSES LIBRARY -->
+    <link rel="stylesheet" href="assets/css/simplified.css" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Feather Icons -->
+    <link rel="stylesheet" href="Assets/feather-icons/feather.css" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <title>Weights calculator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="circle-gradients">
+        <div class="circle"></div>
+      </div>
+
+      <!-- ---------------------------------NavBar-------------------------------- -->
+      <nav class="flex align-center">
+        <div class="navbar container flex justify-between align-center">
+          <h1 class="logo flex align-center">
+            <img src="assets/images/logo.png" alt="" width="40" />Uni<span
+              >WeightsCalc</span
+            >
+          </h1>
+          <ul class="left-nav-menu flex align-center">
+            <li>
+              <a href="#"><i class="feather-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="#"><i class="feather-info"></i> About</a>
+            </li>
+            <li>
+              <a href="#"><i class="feather-phone"></i> Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Theme button -->
+        <div class="theme-btn bg-light shadow mr-4" id="themeBtn">
+          <i class="feather-sun"></i>
+        </div>
+      </nav>
+
+      <!-- University weight calculator is a simple calculator for calcula -->
+
+      <!-- Content-wrapper -->
+      <section class="content-wrapper container flex gap-6">
+        <div class="content-text flex-3 mt-6">
+          <h1 class="text-50 text-gradient">
+            University Cutoff Weights Calculator
+          </h1>
+          <h1 class="text-25 text-muted mb-1 mt-4">
+            Calculate your weights without a calculator
+          </h1>
+          <p class="text-muted">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            cumque veniam ipsum maiores saepe, molestias, quisquam dolorum modi
+            ut excepturi ipsam animi dignissimos magnam voluptates amet
+            accusamus nesciunt obcaecati dolorem suscipit minima consequuntur,
+            adipisci officiis? Esse, id assumenda! Ea aperiam et repellendus
+            possimus harum vero deleniti sequi exercitationem voluptatibus.
+            Perspiciatis tenetur qui eos soluta. Nobis modi doloremque voluptas
+            quidem rem!
+          </p>
+
+          <button class="btn btn-danger-gradient my-2 btn-rounded shadow-lg">
+            Learn more
+          </button>
+        </div>
+        <div class="indicator flex-1 flex-center">
+          <img src="assets/images/arrows.png" alt="" />
+        </div>
+        <div class="weight-wrapper">
+          <img
+            src="assets/images/DrawKit Vector Illustration Frosted Glass Computer Icons (17).png"
+            alt=""
+            class="image-1"
+          />
+          <img
+            src="assets/images/DrawKit Vector Illustration Frosted Glass Computer Icons (12).png"
+            alt=""
+            class="image-2"
+          />
+          <!-- Weight Container -->
+          <div class="weight-container flex-2 rounded-lg">
+            <!-- -----------------------------------------Individual Slides------------------------- -->
+            <!-- -----------------------------------------Slide 1---------------------------------------- ------------------------------------------>
+            <div class="weight-slide" id="firstSlide">
+              <div class="weight-header flex justify-center pt-1">
+                <h1 class="text-22">O'LEVEL</h1>
+              </div>
+              <div class="weight-body p-2">
+                <p class="text-14 italics text-center text-bold">
+                  Select your grades
+                </p>
+
+                <!-- ------------------------Subjects and grades--------------------- -->
+                <ul class="subjects olevel-subjects mt-2"></ul>
+                <!-- ------------------------//Subjects and grades--------------------- -->
+              </div>
+              <div class="btns flex justify-between px-4">
+                <span></span>
+                <button class="btn btn-rounded next-btn" id="firstBtn">
+                  Next
+                </button>
+              </div>
+            </div>
+            <!-- -----------------------------------------End of Slide 1---------------------------------------- ------------------------------------------>
+
+            <!-- -----------------------------------------Slide 2---------------------------------------- --------------------------------------------------->
+            <div class="weight-slide">
+              <div class="weight-header flex justify-center pt-1">
+                <h1 class="text-22">O'LEVEL</h1>
+              </div>
+              <div class="weight-body p-2">
+                <p class="text-14 italics text-center text-bold">
+                  Your O'level weights
+                </p>
+                <!-- ------------------------Sumary of O'level results--------------------- -->
+                <div class="summary mt-5">
+                  <p class="text-15 text-bold">
+                    Distinctions <span class="dist ml-1"></span>
+                  </p>
+                  <div class="progress-bar flex">
+                    <div class="progress distinctions"></div>
+                  </div>
+                  <p class="text-15 text-bold">
+                    Credits <span class="cred ml-1"></span>
+                  </p>
+                  <div class="progress-bar">
+                    <div class="progress credits"></div>
+                  </div>
+                  <p class="text-15 text-bold">
+                    Passes <span class="pass ml-1"></span>
+                  </p>
+                  <div class="progress-bar">
+                    <div class="progress passes"></div>
+                  </div>
+                  <p class="text-15 text-bold">
+                    F9s <span class="fail ml-1"></span>
+                  </p>
+                  <div class="progress-bar">
+                    <div class="progress failures"></div>
+                  </div>
+                  <!-- Circular progress bar-->
+                  <div class="circular-progress mt-4 mx-auto">
+                    <div class="inner-circle"></div>
+                    <div class="number" id="totalOlevelWeights">2.1</div>
+                    <div class="outer-circle">
+                      <div class="bar left">
+                        <div class="progres"></div>
+                      </div>
+                      <div class="bar right">
+                        <div class="progres"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //Circular progress bar-->
+                </div>
+              </div>
+              <div class="btns flex justify-between px-4">
+                <button class="btn btn-rounded prev-btn">Previous</button>
+                <button class="btn btn-rounded next-btn">Next</button>
+              </div>
+            </div>
+            <!-- -----------------------------------------End of Slide 2---------------------------------------- --------------------------------------------------->
+
+            <!-- -----------------------------------------Slide 3---------------------------------------- --------------------------------------------------->
+            <div class="weight-slide">
+              <div class="weight-header flex justify-center pt-1">
+                <h1 class="text-22">A'LEVEL</h1>
+              </div>
+              <div class="weight-body p-2">
+                <p class="text-14 italics text-center text-bold">
+                  Choose your first relevant subject
+                </p>
+                <!-- ------------------------Subjects--------------------- -->
+                <ul
+                  class="subjects alevel-subjects relevant-1 mt-2 alevel a-subjects"
+                ></ul>
+                <!-- ------------------------//Subjects--------------------- -->
+              </div>
+              <div class="btns flex justify-between px-4">
+                <button class="btn btn-rounded prev-btn">Previous</button>
+                <button class="btn btn-rounded next-btn hide">Next</button>
+              </div>
+            </div>
+            <!-- -----------------------------------------End of Slide 3---------------------------------------- --------------------------------------------------->
+
+            <!-- -----------------------------------------Slide 4---------------------------------------- --------------------------------------------------->
+            <div class="weight-slide">
+              <div class="weight-header flex justify-center pt-1">
+                <h1 class="text-22">A'LEVEL</h1>
+              </div>
+              <div class="weight-body p-2">
+                <p class="text-14 italics text-center text-bold">
+                  Choose your grade
+                </p>
+                <!-- ------------------------Grades--------------------- -->
+                <ul
+                  class="grades alevel-grades relevant-1-grades mt-2 flex gap-4 flex-wrap alevel a-grades"
+                ></ul>
+                <!-- ------------------------//Grades--------------------- -->
+              </div>
+              <div class="btns flex justify-between px-4">
+                <button class="btn btn-rounded prev-btn">Previous</button>
+                <button class="btn btn-rounded next-btn hide">Next</button>
+              </div>
+            </div>
+            <!-- -----------------------------------------End of Slide 4------------------------------------------------------------------------------------------->
+
+            <!-- -----------------------------------------Slide 5---------------------------------------- --------------------------------------------------->
+            <div class="weight-slide">
+              <div class="weight-header flex justify-center pt-1">
+                <h1 class="text-22">A'LEVEL</h1>
+              </div>
+              <div class="weight-body p-2">
+                <p class="text-14 italics text-center text-bold">
+                  Choose your second relevant subject
+                </p>
+                <!-- ------------------------Subjects--------------------- -->
+                <ul
+                  class="subjects alevel-subjects relevant-2 mt-2 alevel a-subjects"
+                ></ul>
+                <!-- ------------------------//Subjects--------------------- -->
+              </div>
+              <div class="btns flex justify-between px-4">
+                <button class="btn btn-rounded prev-btn">Previous</button>
+                <button class="btn btn-rounded next-btn hide">Next</button>
+              </div>
+            </div>
+            <!-- -----------------------------------------End of Slide 5---------------------------------------- --------------------------------------------------->
+
+            <!-- -----------------------------------------Slide 6---------------------------------------- --------------------------------------------------->
+            <div class="weight-slide">
+              <div class="weight-header flex justify-center pt-1">
+                <h1 class="text-22">A'LEVEL</h1>
+              </div>
+              <div class="weight-body p-2">
+                <p class="text-14 italics text-center text-bold">
+                  Choose your grade
+                </p>
+                <!-- ------------------------Grades--------------------- -->
+                <ul
+                  class="grades alevel-grades relevant-2-grades mt-2 flex gap-4 flex-wrap alevel a-grades"
+                ></ul>
+                <!-- ------------------------//Grades--------------------- -->
+              </div>
+              <div class="btns flex justify-between px-4">
+                <button class="btn btn-rounded prev-btn">Previous</button>
+                <button class="btn btn-rounded next-btn hide">Next</button>
+              </div>
+            </div>
+            <!-- -----------------------------------------End of Slide 6------------------------------------------------------------------------------------------->
+
+            <!-- -----------------------------------------Slide 7---------------------------------------- --------------------------------------------------->
+            <div class="weight-slide">
+              <div class="weight-header flex justify-center pt-1">
+                <h1 class="text-22">A'LEVEL</h1>
+              </div>
+              <div class="weight-body p-2">
+                <p class="text-14 italics text-center text-bold">
+                  Choose your essential subject
+                </p>
+                <!-- ------------------------Subjects--------------------- -->
+                <ul
+                  class="subjects alevel-subjects essential mt-2 alevel a-subjects"
+                ></ul>
+                <!-- ------------------------//Subjects--------------------- -->
+              </div>
+              <div class="btns flex justify-between px-4">
+                <button class="btn btn-rounded prev-btn">Previous</button>
+                <button class="btn btn-rounded next-btn hide">Next</button>
+              </div>
+            </div>
+            <!-- -----------------------------------------End of Slide 7---------------------------------------- --------------------------------------------------->
+
+            <!-- -----------------------------------------Slide 8---------------------------------------- --------------------------------------------------->
+            <div class="weight-slide">
+              <div class="weight-header flex justify-center pt-1">
+                <h1 class="text-22">A'LEVEL</h1>
+              </div>
+              <div class="weight-body p-2">
+                <p class="text-14 italics text-center text-bold">
+                  Choose your grade
+                </p>
+                <!-- ------------------------Grades--------------------- -->
+                <ul
+                  class="grades alevel-grades essential-grades mt-2 flex gap-4 flex-wrap alevel a-grades"
+                ></ul>
+                <!-- ------------------------//Grades--------------------- -->
+              </div>
+              <div class="btns flex justify-between px-4">
+                <button class="btn btn-rounded prev-btn">Previous</button>
+                <button class="btn btn-rounded next-btn hide">Next</button>
+              </div>
+            </div>
+            <!-- -----------------------------------------End of Slide 8------------------------------------------------------------------------------------------->
+
+            <!-- -----------------------------------------Slide 9---------------------------------------- --------------------------------------------------->
+            <div class="weight-slide">
+              <div class="weight-header flex justify-center pt-1">
+                <h1 class="text-22">A'LEVEL</h1>
+              </div>
+              <div class="weight-body p-2">
+                <p class="text-14 italics text-center text-bold">
+                  Choose your subsidiary subject
+                </p>
+                <!-- ------------------------Subjects--------------------- -->
+                <ul
+                  class="subjects subsidiary-subjects mt-2 alevel a-subjects"
+                ></ul>
+                <!-- ------------------------//Subjects--------------------- -->
+              </div>
+              <div class="btns flex justify-between px-4">
+                <button class="btn btn-rounded prev-btn">Previous</button>
+                <button class="btn btn-rounded next-btn hide">Next</button>
+              </div>
+            </div>
+            <!-- -----------------------------------------End of Slide 9---------------------------------------- --------------------------------------------------->
+
+            <!-- -----------------------------------------Slide 10---------------------------------------- --------------------------------------------------->
+            <div class="weight-slide">
+              <div class="weight-header flex justify-center pt-1">
+                <h1 class="text-22">A'LEVEL</h1>
+              </div>
+              <div class="weight-body p-2">
+                <p class="text-14 italics text-center text-bold">
+                  Choose your grade
+                </p>
+                <h2 class="text-20 text-center my-2">
+                  Hint: O => 1 and F => 0
+                </h2>
+                <!-- ------------------------Grades--------------------- -->
+                <ul
+                  class="grades subsidiary-grades mt-2 flex gap-4 flex-wrap alevel a-grades"
+                ></ul>
+                <!-- ------------------------//Grades--------------------- -->
+              </div>
+              <div class="btns flex justify-between px-4">
+                <button class="btn btn-rounded prev-btn">Previous</button>
+                <button class="btn btn-rounded next-btn hide">Next</button>
+              </div>
+            </div>
+            <!-- -----------------------------------------End of Slide 10------------------------------------------------------------------------------------------->
+
+            <!-- -----------------------------------------Slide 11---------------------------------------- --------------------------------------------------->
+            <div class="weight-slide">
+              <div class="weight-header flex justify-center pt-1">
+                <h1 class="text-22">A'LEVEL</h1>
+              </div>
+              <div class="weight-body p-2">
+                <p class="text-14 italics text-center text-bold">
+                  Choose your grade for GP
+                </p>
+                <h2 class="text-20 text-center my-2">
+                  Hint: O => 1 and F => 0
+                </h2>
+                <!-- ------------------------Grades--------------------- -->
+                <ul
+                  class="grades gp-grades mt-2 flex gap-4 flex-wrap alevel a-grades"
+                ></ul>
+                <!-- ------------------------//Grades--------------------- -->
+              </div>
+              <div class="btns flex justify-between px-4">
+                <button class="btn btn-rounded prev-btn">Previous</button>
+                <button class="btn btn-rounded next-btn hide">Next</button>
+              </div>
+            </div>
+            <!-- -----------------------------------------End of Slide 11------------------------------------------------------------------------------------------->
+
+            <!-- -----------------------------------------Slide 12---------------------------------------- --------------------------------------------------->
+            <div class="weight-slide">
+              <div class="weight-header flex justify-center pt-1">
+                <h1 class="text-22">A'LEVEL</h1>
+              </div>
+              <div class="weight-body p-2">
+                <h1 class="text-22 text-center my-2">TOTAL POINTS</h1>
+                <!-- Circular progress-->
+                <div class="circular-progress points mt-4 mx-auto total-points">
+                  <div class="inner-circle"></div>
+                  <div class="number flex" id="totalPoints">
+                    <span>19 </span><span class="text-12 flex-end">points</span>
+                  </div>
+                  <div class="outer-circle">
+                    <div class="bar left">
+                      <div class="progres"></div>
+                    </div>
+                    <div class="bar right">
+                      <div class="progres"></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Circular progress-->
+              </div>
+              <div class="btns flex justify-between px-4">
+                <button class="btn btn-rounded prev-btn">Previous</button>
+                <button class="btn btn-rounded next-btn">Next</button>
+              </div>
+            </div>
+            <!-- -----------------------------------------End of Slide 12---------------------------------------- --------------------------------------------------->
+
+            <!-- -----------------------------------------Slide 13---------------------------------------- --------------------------------------------------->
+            <div class="weight-slide">
+              <div class="weight-header flex justify-center pt-1">
+                <h1 class="text-22">A'LEVEL</h1>
+              </div>
+              <div class="weight-body p-2">
+                <h1 class="text-20 text-center">OVERALL WEIGHTS FOR A'LEVEL</h1>
+                <!-- ------------------------Sumary of overall A'level weights--------------------- -->
+                <div class="summary mt-2">
+                  <h1 class="grades-scored text-center">ABD11</h1>
+                  <p class="text-15 text-bold rel-1">Mathematics</p>
+                  <span class="ml-1 r1"></span>
+                  <div class="progress-bar">
+                    <div class="progress w-100" id="rel-1"></div>
+                  </div>
+                  <p class="text-15 text-bold rel-2">Physics</p>
+                  <span class="ml-1 r2"></span>
+                  <div class="progress-bar">
+                    <div class="progress w-90" id="rel-2"></div>
+                  </div>
+                  <p class="text-15 text-bold ess">Chemistry</p>
+                  <span class="ml-1 es"></span>
+                  <div class="progress-bar">
+                    <div class="progress w-60" id="ess"></div>
+                  </div>
+                  <p class="text-15 text-bold sub">Subsidiay ICT and GP</p>
+                  <span class="ml-1 s-g"></span>
+                  <div class="progress-bar">
+                    <div class="progress w-100" id="sub_gp"></div>
+                  </div>
+
+                  <!-- Circular progress bar-->
+                  <div class="circular-progress alevel-weights mt-2 mx-auto">
+                    <div class="inner-circle"></div>
+                    <div class="number" id="totalWeights">47</div>
+                    <div class="outer-circle">
+                      <div class="bar left">
+                        <div class="progres"></div>
+                      </div>
+                      <div class="bar right">
+                        <div class="progres"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //Circular progress bar-->
+                </div>
+              </div>
+              <div class="btns flex justify-between px-4">
+                <button class="btn btn-rounded prev-btn">Previous</button>
+                <button class="btn btn-rounded next-btn">Next</button>
+              </div>
+            </div>
+            <!-- -----------------------------------------End of Slide 13---------------------------------------- --------------------------------------------------->
+
+            <!-- -----------------------------------------Slide 14---------------------------------------- --------------------------------------------------->
+            <div class="weight-slide">
+              <div class="weight-header flex justify-center pt-1">
+                <h1 class="text-22">A'LEVEL</h1>
+              </div>
+              <div class="weight-body p-2">
+                <p class="text-18 italics text-center text-bold my-2">
+                  Select your gender
+                </p>
+                <div class="gender-wrapper flex mt-4">
+                  <img
+                    src="assets/images/male.png"
+                    alt=""
+                    class="gender-img flex-1"
+                    id="male"
+                  />
+                  <img
+                    src="assets/images/female.png"
+                    alt=""
+                    class="gender-img flex-1"
+                    id="female"
+                  />
+                </div>
+              </div>
+              <div class="btns flex justify-between px-4">
+                <button class="btn btn-rounded prev-btn" id="genderPrevBtn">
+                  Previous
+                </button>
+                <button class="btn btn-rounded next-btn hide">Next</button>
+              </div>
+            </div>
+            <!-- -----------------------------------------End of Slide 15---------------------------------------- --------------------------------------------------->
+
+            <!-- -----------------------------------------Slide 14---------------------------------------- --------------------------------------------------->
+            <div class="weight-slide">
+              <div class="weight-header flex justify-center pt-1">
+                <h1 class="text-22 mt-2">TOTAL OVERALL WEIGHTS</h1>
+              </div>
+              <div class="weight-body p-2">
+                <!-- ------------------------Sumary of Overall weights--------------------- -->
+                <div class="summary mt-5">
+                  <p class="text-15 text-bold">
+                    O'level <span class="ml-1" id="olevel"></span>
+                  </p>
+                  <div class="progress-bar">
+                    <div class="progress w-60 olevel-weights"></div>
+                  </div>
+                  <p class="text-15 text-bold">
+                    A'level <span class="ml-1" id="alevel"></span>
+                  </p>
+                  <div class="progress-bar">
+                    <div class="progress w-90 alevel-weight"></div>
+                  </div>
+                  <p class="gender text-bold text-22 text-center mt-2 gen"></p>
+                  <!-- Circular progress-->
+                  <div class="circular-progress overall-weights mt-4 mx-auto">
+                    <div class="inner-circle"></div>
+                    <div class="number" id="totalOverall">51.3</div>
+                    <div class="outer-circle">
+                      <div class="bar left">
+                        <div class="progres"></div>
+                      </div>
+                      <div class="bar right">
+                        <div class="progres"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //Circular progress-->
+                </div>
+              </div>
+              <div class="btns flex justify-between px-4">
+                <button class="btn btn-rounded prev-btn">Previous</button>
+              </div>
+            </div>
+            <!-- -----------------------------------------End of Slide 15---------------------------------------- --------------------------------------------------->
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Custom Scripts -->
+    <script src="assets/js/componets.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
