@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- General Styles - MY OWN CSS UTILITY CLASSES LIBRARY -->
+    <link rel="stylesheet" href="assets/css/simplified.css" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Feather Icons -->
+    <link rel="stylesheet" href="Assets/feather-icons/feather.css" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <title>Weights calculator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="circle-gradients relative">
+        <div class="circle"></div>
+      </div>
+
+      <!-- ---------------------------------NavBar-------------------------------- -->
+      <nav class="flex align-center">
+        <div class="navbar container flex justify-between align-center">
+          <a href="index.html" class="logo flex align-center decoration-none">
+            <img src="assets/images/logo.png" alt="" width="40" />
+            <h1>Uni<span>WeightsCalc</span></h1>
+          </a>
+          <ul class="left-nav-menu flex align-center">
+            <li>
+              <a href="index.html"><i class="feather-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="about.html"><i class="feather-info"></i> About</a>
+            </li>
+            <li>
+              <a href="#"><i class="feather-phone"></i> Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Theme button -->
+        <div class="theme-btn bg-light shadow mr-4" id="themeBtn">
+          <i class="feather-sun"></i>
+        </div>
+      </nav>
+      <div class="relative container about pb-4">
+        <h1 class="text-center text-40 text-bold">THE WEIGHTING SYSTEM</h1>
+
+        <p class="text-muted text-14 text-center">
+          The Weighting Sytem is a standard criteria used to determine whether a
+          public university applicant is eligible to take a certain course based
+          on their resulting cutoff points. Its mostly used by public
+          universities in uganda that offer government scholarships to students
+        </p>
+        <h1 class="text-center text-30 text-bold mt-3">WEIGHTING CRITERIA</h1>
+        <p class="text-muted text-14">
+          The maximum points a candidate can get is 53 except for girls whose
+          weights are added an extra 1.5 to get 54.5
+        </p>
+        <p class="text-muted text-14 mt-3">
+          There are two result sets considered:
+        </p>
+        <ul class="ml-4">
+          <li>Lower Level (O'level) Results</li>
+          <li>High Level-High School (A'level) Results</li>
+        </ul>
+        <h1 class="text-20 text-bold mt-3">
+          For O'level (Contributes 3 points)
+        </h1>
+        <p class="text-muted text-14">
+          Ten subjects are done and each subject scores 0.3 points for
+          Distinctions (D1,D2) <br />0.2 points are awarded for Credits (C3-C6)
+          <br />
+          0.1 ponits are given for passes (P7-P8) and 0 points for failure i.e
+          (F9)
+        </p>
+        <p class="text-muted text-14">
+          The best candidate scores 3 total points and worst 0 points
+        </p>
+        <h1 class="text-20 text-bold mt-3">
+          For A'level (Contributes 50 points)
+        </h1>
+        <p class="text-muted text-14">
+          A'level is the determining factor for the course to be taken at campus
+          since it contributes 97% of the total weights
+        </p>
+        <ul class="ml-2">
+          <li>
+            5 subjects are done of which 3 main ones (determinig factor) carry a
+            total of 48 points and the other two each carries 1 point
+          </li>
+          <li>
+            Of the three subjects, 2 are called essentials and determine the
+            kind of course to be taken (e.g Mathematics & Physic for Engineering
+            courses, Biology & Chemistry for medical related courses). These
+            subjects each has a weight of 3
+          </li>
+          <li>The other 1 subject is called relevant and carries 2 points</li>
+          <li>
+            The remaining two subjects one called desirableand accompanies the
+            main three subjects. These maybe (ICT or sub-math). The last subject
+            is compulsory for every candidate (General Paper)
+          </li>
+          <li>
+            For A'level grades the conversion scale is A=6, B=5, C=4, D=3, E=2,
+            O=1, F=0
+          </li>
+          <li>
+            Earlier we talked about the 48 points and this is for the three main
+            subjects scored by the best candidate
+          </li>
+          <li>To get that;</li>
+          <ul class="ml-2">
+            <li>
+              Essentials(2 subjects) => (2*3*6) = 36 i.e 2 -> number of
+              subjects, 3 -> weights for an essential and 6 -> conversion scale
+              for an A
+            </li>
+            <li>Relevant(1 subjects) => (1*2*6) = 12</li>
+            <li>So; 36+12 = 48</li>
+            <li>
+              48 + 2 (One for desirable (ICT or Submath) and the other for
+              General paper) = 50 points
+            </li>
+          </ul>
+        </ul>
+        <h1 class="text-center text-30 text-bold mt-3">
+          DEMO OF RESULTS FOR THE BEST CANDIDATE
+        </h1>
+        <div class="flex justify-center">
+          <img src="/Assets/images/demo.jpg" alt="" class="demo" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom Scripts -->
+    <script src="assets/js/componets.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
