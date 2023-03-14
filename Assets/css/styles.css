@@ -471,6 +471,9 @@ ul.subjects li .subject-select {
   button {
     margin-top: 2rem;
   }
+  .btn-danger-gradient {
+    margin: 1rem auto;
+  }
 
   .navbar ul {
     margin-top: 0.8rem;
