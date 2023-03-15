@@ -2,4 +2,4 @@
 
 ### Claculate your cutoff weights in a simple steps
 
-![Screenshot](Home.png)
+![Screenshot](screenshot.png)
