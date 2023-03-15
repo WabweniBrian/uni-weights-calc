@@ -11,7 +11,7 @@ const [nextBtns, prevBtns, firstBtn, rootDocument, themeBtn] = [
 document.addEventListener("DOMContentLoaded", () => {
   let theme =
     JSON.parse(localStorage.getItem("weightCaclTheme")) ||
-    localStorage.setItem("weightCaclTheme", JSON.stringify("light"));
+    localStorage.setItem("weightCaclTheme", JSON.stringify("dark"));
   rootDocument.setAttribute("color-scheme", `${theme}`);
 });
 
