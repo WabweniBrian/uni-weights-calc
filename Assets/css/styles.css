@@ -167,7 +167,7 @@ nav .navbar ul li {
   place-items: center;
   cursor: pointer;
   color: #050c15;
-  z-index: 1;
+  z-index: 99;
 }
 
 nav .navbar ul li a {
